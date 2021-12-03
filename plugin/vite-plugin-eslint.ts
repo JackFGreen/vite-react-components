@@ -47,8 +47,8 @@ export default function eslint(options: Options): Plugin {
 
       const report = await eslint.lintFiles(file)
 
-      const hasWarnings = report.some(result => result.warningCount !== 0)
-      const hasErrors = report.some(result => result.errorCount !== 0)
+      const hasWarnings = report.some((result) => result.warningCount !== 0)
+      const hasErrors = report.some((result) => result.errorCount !== 0)
 
       const result = formatter.format(report)
 

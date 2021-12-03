@@ -1,8 +1,6 @@
 /**
  * 接口实例方法，相关配置
  */
-import { message } from 'antd'
-
 import Ajax from './Ajax'
 
 // mock api data
@@ -44,7 +42,7 @@ export const ajax = new Ajax({
  * 	})} opt 处理选项
  * @param opt.success 成功处理
  * @param opt.fail 异常 code 处理，不会走 opt.error
- * @param opt.error 不成功处理，默认 antd message 提示，error: false 取消默认处理，error: () => {} 自定义处理函数
+ * @param opt.error 不成功处理，error: false 取消默认处理，error: () => {} 自定义处理函数
  * @returns {unknown}
  * @example
  * const res = await getData()
@@ -59,7 +57,7 @@ export const ajax = new Ajax({
  *       }
  *    },
  *    error() {
- *       // 处理错误，默认用 antd message 提示信息，可不传
+ *       // 处理错误，可不传
  *    }
  * })
  */
@@ -87,5 +85,5 @@ export function handleApiCode(
 
   if (typeof opt.error !== 'boolean') opt.error = true
   // eslint-disable-next-line @typescript-eslint/no-floating-promises
-  if (opt.error) message.error(res.message)
+  if (opt.error) console.error(res.message)
 }

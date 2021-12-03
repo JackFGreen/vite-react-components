@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import ReactRouterView from '@jackgreen/react-router-view'
 import routes from 'src/routes'
-import { DatePicker, Layout } from 'antd'
 
 const Loading: React.FC = () => {
   return <div style={{ display: 'none' }}>Loading...</div>
@@ -10,11 +10,10 @@ const Loading: React.FC = () => {
 // eslint-disable-next-line
 export default function App(props: any): JSX.Element {
   return (
-    <Suspense fallback={<Loading />}>
-      <Layout className='app'>
-        <DatePicker />
+    <BrowserRouter basename={`/${import.meta.env.VITE_APP_NAME as string}`}>
+      <Suspense fallback={<Loading />}>
         <ReactRouterView {...props} routes={routes} />
-      </Layout>
-    </Suspense>
+      </Suspense>
+    </BrowserRouter>
   )
 }

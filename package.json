@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "prettier": "prettier 'src/**/*.{ts,tsx,css,less,scss}' --write",
+    "prettier": "prettier 'src/**/*.{ts,tsx,vue,htm,html,css,sss,less,scss,sass}' --write",
     "lint:script": "eslint 'src/**/*.{ts,tsx}'",
     "fix:script": "eslint 'src/**/*.{ts,tsx}' --fix",
     "lint:style": "stylelint 'src/**/*.{vue,htm,html,css,sss,less,scss,sass}'",
