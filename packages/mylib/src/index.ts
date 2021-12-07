@@ -1,1 +1,1 @@
-export default (): void => console.log('run mylib...')
+export default (): void => console.log('>>>run mylib...')

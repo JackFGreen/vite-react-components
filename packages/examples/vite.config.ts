@@ -1,23 +1,14 @@
-import reactRefresh from '@vitejs/plugin-react-refresh'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import path from 'path'
 import eslint from '../../plugin/vite-plugin-eslint'
 
-// import babel from '@rollup/plugin-babel';
-// import typescript from '@rollup/plugin-typescript'
-
 export default defineConfig({
   plugins: [
-    reactRefresh(),
-
+    react(),
     eslint({
       include: ['src/**/*.ts', 'src/**/*.tsx']
     })
-
-    // babel({
-    // 	babelHelpers: 'bundled'
-    // }),
-    // typescript(),
   ],
   resolve: {
     alias: {
