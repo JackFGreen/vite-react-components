@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect } from 'react'
 import { getDemoWithOutParams, handleApiCode } from 'src/api'
 import styles from './index.module.css'
+import { LibDemo } from 'mylib'
 
 interface DemoPageProps {
   demo: string
@@ -28,7 +29,12 @@ function DemoPage(props: DemoPageProps): JSX.Element {
     })
   }, [fetchData])
 
-  return <div className={styles.demo}>DemoPage</div>
+  return (
+    <div className={styles.demo}>
+      DemoPage
+      <LibDemo style={{ color: 'green' }} />
+    </div>
+  )
 }
 
 export default DemoPage
