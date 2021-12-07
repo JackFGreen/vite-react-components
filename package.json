@@ -6,6 +6,9 @@
   ],
   "version": "0.0.0",
   "scripts": {
+    "examples:dev": "yarn workspace examples run dev",
+    "examples:build": "yarn workspace examples run build",
+    "mylib:build": "yarn workspace mylib run build",
     "prettier": "prettier 'packages/**/*.{ts,tsx,vue,htm,html,css,sss,less,scss,sass}' --write",
     "lint:script": "eslint 'packages/**/*.{ts,tsx}'",
     "fix:script": "eslint 'packages/**/*.{ts,tsx}' --fix",
