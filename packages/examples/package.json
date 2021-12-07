@@ -1,23 +1,28 @@
 {
-  "name": "vite-react-components",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "version": "0.0.0",
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "prettier": "prettier 'packages/**/*.{ts,tsx,vue,htm,html,css,sss,less,scss,sass}' --write",
-    "lint:script": "eslint 'packages/**/*.{ts,tsx}'",
-    "fix:script": "eslint 'packages/**/*.{ts,tsx}' --fix",
-    "lint:style": "stylelint 'packages/**/*.{vue,htm,html,css,sss,less,scss,sass}'",
-    "fix:style": "stylelint 'packages/**/*.{vue,htm,html,css,sss,less,scss,sass}' --fix",
-    "lint": "npm run lint:style && npm run lint:script",
-    "fix": "npm run fix:style && npm run fix:script",
-    "prepare": "husky install"
+    "test": "echo \"from examples\"",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jackgreen/react-router-view": "^1.2.1",
+    "lodash": "^4.17.20",
+    "mylib": "^0.1.4",
+    "qs": "^6.9.4",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router-dom": "^5.2.0",
+    "whatwg-fetch": "^3.5.0"
   },
   "devDependencies": {
-    "fetch-mock": "^9.11.0",
-    "mockjs": "^1.1.0",
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.15",
     "@commitlint/cli": "^12.1.1",
@@ -47,8 +52,10 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "fetch-mock": "^9.11.0",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
+    "mockjs": "^1.1.0",
     "prettier": "^2.2.1",
     "stylelint": "^13.13.0",
     "stylelint-config-prettier": "^8.0.2",

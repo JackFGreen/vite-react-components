@@ -1,7 +1,7 @@
 import reactRefresh from '@vitejs/plugin-react-refresh'
 import { defineConfig } from 'vite'
 import path from 'path'
-import eslint from './plugin/vite-plugin-eslint'
+import eslint from '../../plugin/vite-plugin-eslint'
 
 // import babel from '@rollup/plugin-babel';
 // import typescript from '@rollup/plugin-typescript'

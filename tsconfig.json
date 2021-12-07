@@ -13,9 +13,8 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "baseUrl": "./",
     "jsx": "react"
   },
-  "include": ["./src"]
+  "include": ["./packages"],
+  "exclude": ["node_modules"]
 }
