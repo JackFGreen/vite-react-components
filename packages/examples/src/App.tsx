@@ -2,9 +2,6 @@ import React, { Suspense } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import ReactRouterView from '@jackgreen/react-router-view'
 import routes from 'src/routes'
-import myLib from 'mylib'
-
-myLib()
 
 const Loading: React.FC = () => {
   return <div style={{ display: 'none' }}>Loading...</div>
