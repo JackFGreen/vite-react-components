@@ -1,5 +1,5 @@
 {
-  "name": "mylib",
+  "name": "@jackgreen/mylib",
   "version": "1.0.0",
   "description": "",
   "exports": {
@@ -10,6 +10,9 @@
     }
   },
   "types": "dist",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"from mylib\"",
     "tsc": "tsc --watch",
