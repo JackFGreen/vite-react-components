@@ -6,9 +6,9 @@
   ],
   "version": "0.0.0",
   "scripts": {
-    "examples:dev": "yarn workspace examples run dev",
-    "examples:build": "yarn workspace examples run build",
-    "mylib:build": "yarn workspace mylib run build",
+    "examples:dev": "yarn workspace @jackgreen/examples run dev",
+    "examples:build": "yarn workspace @jackgreen/examples run build",
+    "mylib:build": "yarn workspace @jackgreen/mylib run build",
     "prettier": "prettier 'packages/**/*.{ts,tsx,vue,htm,html,css,sss,less,scss,sass}' --write",
     "lint:script": "eslint 'packages/**/*.{ts,tsx}'",
     "fix:script": "eslint 'packages/**/*.{ts,tsx}' --fix",
@@ -18,7 +18,9 @@
     "fix": "npm run fix:style && npm run fix:script",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "version": "npm run changelog && git add CHANGELOG.md",
+    "ver": "lerna version"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
