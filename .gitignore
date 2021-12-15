@@ -5,3 +5,4 @@ dist-ssr
 .eslintcache
 .vscode
 yarn-error.log
+lerna-debug.log
