@@ -17,6 +17,7 @@
     "lint": "npm run lint:style && npm run lint:script",
     "fix": "npm run fix:style && npm run fix:script",
     "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -38,6 +39,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "@vitejs/plugin-react": "^1.0.7",
     "commitizen": "^4.2.3",
+    "conventional-changelog-cli": "^2.1.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
