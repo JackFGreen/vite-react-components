@@ -5,6 +5,7 @@
   "version": "independent",
   "command": {
     "version": {
+      "conventionalGraduate": true,
       "allowBranch": ["beta", "stable"],
       "gitTagVersion": true,
       "changelog": true,
