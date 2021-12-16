@@ -5,6 +5,8 @@
   "version": "independent",
   "command": {
     "version": {
+      "preid": "beta",
+      "conventionalPrerelease": true,
       "allowBranch": ["beta", "stable"],
       "gitTagVersion": true,
       "changelog": true,
@@ -13,6 +15,9 @@
       "conventionalCommits": true,
       "ignoreChanges": ["*.md"],
       "message": "chore(release): publish"
+    },
+    "publish": {
+      "distTag": "beta"
     }
   }
 }
