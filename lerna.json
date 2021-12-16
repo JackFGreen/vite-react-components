@@ -5,6 +5,7 @@
   "version": "independent",
   "command": {
     "version": {
+      "allowBranch": ["beta", "stable"],
       "gitTagVersion": true,
       "changelog": true,
       "push": false,
