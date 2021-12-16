@@ -20,7 +20,9 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "prepare": "husky install",
     "version": "npm run changelog && git add CHANGELOG.md",
-    "ver": "lerna version"
+    "ver": "lerna version",
+    "pub": "lerna publish",
+    "pub:retry": "lerna publish from-git"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
