@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from 'react'
 import { getDemoWithOutParams, handleApiCode } from 'src/api'
 import styles from './index.module.css'
-import { LibDemo } from 'mylib'
+import { LibDemo } from '@jackgreen/mylib'
 
 interface DemoPageProps {
   demo: string
