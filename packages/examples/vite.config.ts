@@ -11,6 +11,7 @@ export default defineConfig({
     })
   ],
   resolve: {
+    conditions: ['VITE_DEV'],
     alias: {
       src: path.resolve(__dirname, './src')
     }
