@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-components",
+  "name": "vite-react-mono",
   "private": true,
   "workspaces": [
     "packages/*"
